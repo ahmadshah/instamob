@@ -4,9 +4,6 @@ namespace Instamob\Laravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-/**
- * @see \Illuminate\Foundation\Application
- */
 class Gateway extends Facade
 {
     /**
