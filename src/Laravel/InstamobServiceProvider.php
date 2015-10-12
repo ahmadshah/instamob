@@ -29,7 +29,9 @@ class InstamobServiceProvider extends ServiceProvider
     protected function registerGateway()
     {
         $this->app->bindShared('instamob', function ($app) {
-            $user = new User;
+            $auth = $app->make('instamob.auth');
+
+            $user = new User($auth);
 
             return new Gateway($user);
         });
