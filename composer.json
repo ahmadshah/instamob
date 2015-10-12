@@ -1,0 +1,22 @@
+{
+    "name": "ahmadshah/instamob",
+    "description": "Instagram API SDK",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5.9",
+        "league/oauth2-instagram": "^0.2.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.1",
+        "illuminate/support": "~5.1",
+        "mockery/mockery": "~0.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Instamob\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
